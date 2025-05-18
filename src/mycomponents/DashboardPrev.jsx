@@ -2,7 +2,7 @@ import { ArrowUpRight, CreditCard } from "lucide-react"
 import { motion } from "framer-motion";
 import logo from "@/assets/lapo-logo.png";
 
-export function DashboardPrev() {
+export default function DashboardPrev() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

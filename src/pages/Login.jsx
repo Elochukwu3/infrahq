@@ -1,7 +1,7 @@
 import LoginForm  from "@/mycomponents/LoginForm";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { DashboardPrev } from "@/mycomponents/dashboardPrev";
+import  DashboardPrev  from "@/mycomponents/dashboardPrev";
 import logo from "@/assets/lapo-logo.png";
 
 export default function LoginPage() {
