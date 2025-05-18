@@ -1,6 +1,8 @@
 
 import { useState } from "react"
 import { Search, SlidersHorizontal, Settings } from "lucide-react"
+import Header from "@/mycomponents/Header"
+import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
 
 
 export default function AuthorizationListPage() {
@@ -55,7 +57,10 @@ export default function AuthorizationListPage() {
   })
 
   return (
-    <div className="container mx-auto p-6 max-w-6xl">
+  <div className="h-full">
+    <Header/>
+    <ContentWrapper>
+       <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Authorization List</h1>
         <p className="text-gray-600">Shows list of all users with authorized roles.</p>
@@ -155,5 +160,7 @@ export default function AuthorizationListPage() {
         </div>
       </div>
     </div>
+    </ContentWrapper>
+  </div> 
   )
 }

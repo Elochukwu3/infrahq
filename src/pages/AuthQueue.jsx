@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import { Search, SlidersHorizontal } from "lucide-react"
+import Header from "@/mycomponents/Header"
+import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
 
 export default function AuthorizationQueuePage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -98,7 +100,10 @@ export default function AuthorizationQueuePage() {
   })
 
   return (
-    <div className="container mx-auto p-6 max-w-6xl">
+   <div className="h-full">
+    <Header/>
+    <ContentWrapper>
+      <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Authorization Queue</h1>
         <p className="text-gray-600">Shows the different requests for authorized roles.</p>
@@ -210,5 +215,7 @@ export default function AuthorizationQueuePage() {
         </div>
       </div>
     </div>
+    </ContentWrapper>
+   </div> 
   )
 }
