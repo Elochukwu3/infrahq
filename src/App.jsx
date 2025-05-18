@@ -24,8 +24,8 @@ import CreateRolePage  from './mycomponents/create-role-dialog';
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <div>Home</div>,
+       path: "/",
+      element: <LoginPage/>,
       errorElement: <div>Oops! Something went wrong.</div>,
     },
     {
