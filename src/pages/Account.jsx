@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Eye, EyeOff } from "lucide-react"
+import Header from "@/mycomponents/Header"
+import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
 
 export default function AccountPage() {
   const [oldPassword, setOldPassword] = useState("")
@@ -44,7 +46,6 @@ export default function AccountPage() {
 
     setIsSubmitting(true)
 
-    // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false)
       setIsSuccess(true)
@@ -54,7 +55,6 @@ export default function AccountPage() {
       setNewPassword("")
       setConfirmPassword("")
 
-      // Hide success message after 3 seconds
       setTimeout(() => {
         setIsSuccess(false)
       }, 3000)
@@ -62,14 +62,17 @@ export default function AccountPage() {
   }
 
   return (
-    <div className="container mx-auto p-6 max-w-6xl">
+   <div className="h-full">
+    <Header/>
+    <ContentWrapper>
+       <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Account</h1>
         <p className="text-gray-600">Change your password here.</p>
       </div>
 
-      <div className="border-t border-gray-200 pt-6">
-        <div className="max-w-md bg-white rounded-lg border border-gray-200 p-6">
+      <div className="border-t border-gray-200 pt-6 w-">
+        <div className="max-w-md bg-white mx-auto rounded-lg border border-gray-200 p-6">
           <h2 className="text-xl font-semibold mb-6">Change Password</h2>
 
           {isSuccess && (
@@ -181,5 +184,7 @@ export default function AccountPage() {
         </div>
       </div>
     </div>
+    </ContentWrapper>
+   </div>
   )
 }
