@@ -60,11 +60,14 @@ export default function LoginPage() {
           transition={{ duration: 0.7 }}
         >
           <motion.div
-            className="absolute top-0 right-0 w-40 h-40 bg-[#002366] rounded-bl-full"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.5, type: "spring" }}
-          />
+  className="absolute -top-15 -left-12 w-28 h-28 rounded-full bg-[#002366] flex items-center justify-center"
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  transition={{ delay: 0.3, duration: 0.5, type: "spring" }}
+>
+  <div className="w-20 h-20 bg-white rounded-full " />
+</motion.div>
+
           <DashboardPrev/>
         </motion.div>
       )}

@@ -21,6 +21,8 @@ import AuthorizationListPage from './pages/AuthList';
 import AuthorizationQueuePage from './pages/AuthQueue';
 import CreateRolePage  from './mycomponents/create-role-dialog';
 import ComplaintsLogPage from './pages/Complaint';
+import StockPage from './pages/Stock';
+import ResolutionPage from './pages/Resolve';
 
 function App() {
   const router = createBrowserRouter([
@@ -51,8 +53,9 @@ function App() {
         {path: "block-unblock", element: <BlockUnblockCardPage/>},
         {path: "complaints-log", element: <ComplaintsLogPage/>},
         {path: 'trail', element: <TrailPage/>},
-        {path: 'stock', element: <div>Stock</div>},
-        {path: 'complaints-resolve', element: <div>complaints-resolve</div>},
+        {path: 'stock', element: <StockPage/>},
+        {path: 'generate-reissue', element: <div>Generate/Reissue</div>},
+        {path: 'complaints-resolve', element: <ResolutionPage/>},
         {path: 'account', element: <AccountPage/>},
         {path: 'authorization-list', element: <AuthorizationListPage/>},
         {path: 'authorization-queue', element: <AuthorizationQueuePage/>},

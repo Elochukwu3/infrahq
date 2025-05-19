@@ -45,7 +45,7 @@ export default function LoginForm() {
         Please sign in using your credentials.
       </motion.p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <motion.div
           className="space-y-2"
           initial={{ opacity: 0, x: -20 }}
@@ -131,7 +131,7 @@ export default function LoginForm() {
           </div>
           <motion.a
             href="#"
-            className="text-sm text-gray-600 hover:text-blue-700"
+            className="text-sm text-gray-600 hover:text-[#002366]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -144,7 +144,7 @@ export default function LoginForm() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <Button type="submit" className="w-full cursor-pointer bg-blue-700 hover:bg-blue-800" disabled={isLoading}>
+          <Button type="submit" className="w-full cursor-pointer bg-[#002366] hover:bg-[#002366]" disabled={isLoading}>
             {isLoading ? (
               <div className="flex items-center">
                 <svg
