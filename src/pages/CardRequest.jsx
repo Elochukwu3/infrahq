@@ -4,6 +4,7 @@ import { Search } from "lucide-react"
 import { Link } from "react-router-dom"
 import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
 import Header from "@/mycomponents/Header"
+import { navItems } from "@/mycomponents/Sdebar"
 
 export default function CardRequestsPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -61,7 +62,7 @@ export default function CardRequestsPage() {
 
   return (
     <div className="h-full">
-      <Header/>
+      <Header icon={navItems[7].icon} label={navItems[7].label}/>
       <ContentWrapper>
 <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">

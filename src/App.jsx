@@ -20,6 +20,7 @@ import AccountPage from './pages/Account';
 import AuthorizationListPage from './pages/AuthList';
 import AuthorizationQueuePage from './pages/AuthQueue';
 import CreateRolePage  from './mycomponents/create-role-dialog';
+import ComplaintsLogPage from './pages/Complaint';
 
 function App() {
   const router = createBrowserRouter([
@@ -46,8 +47,9 @@ function App() {
         { path: "card-profiles/create", element: <CreateProfilePage/> },
         { path: "card-request", element: <CardRequestsPage/> },
         { path: "card-request/:id", element: <CardRequestDetailsPage/> },
-        {path: "block-unblock", element: <BlockUnblockCardPage/>},
         {path: "cards", element: <CardsPage/>},
+        {path: "block-unblock", element: <BlockUnblockCardPage/>},
+        {path: "complaints-log", element: <ComplaintsLogPage/>},
         {path: 'trail', element: <TrailPage/>},
         {path: 'account', element: <AccountPage/>},
         {path: 'authorization-list', element: <AuthorizationListPage/>},

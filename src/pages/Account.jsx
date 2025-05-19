@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Eye, EyeOff } from "lucide-react"
 import Header from "@/mycomponents/Header"
 import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
+import { navItems } from "@/mycomponents/Sdebar"
 
 export default function AccountPage() {
   const [oldPassword, setOldPassword] = useState("")
@@ -63,7 +64,7 @@ export default function AccountPage() {
 
   return (
    <div className="h-full">
-    <Header/>
+    <Header icon={navItems[17].icon} label={"Account"}/>
     <ContentWrapper>
        <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
@@ -90,7 +91,7 @@ export default function AccountPage() {
                   id="oldPassword"
                   className={`w-full p-2 pr-10 border ${
                     errors.oldPassword ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#002366]`}
                   placeholder="Input"
                   value={oldPassword}
                   onChange={(e) => setOldPassword(e.target.value)}
@@ -116,7 +117,7 @@ export default function AccountPage() {
                   id="newPassword"
                   className={`w-full p-2 pr-10 border ${
                     errors.newPassword ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#002366]`}
                   placeholder="Create password"
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
@@ -146,7 +147,7 @@ export default function AccountPage() {
                   id="confirmPassword"
                   className={`w-full p-2 pr-10 border ${
                     errors.confirmPassword ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                  } rounded-md focus:outline-none focus:ring-2 focus:ring-[#002366]`}
                   placeholder="Confirm password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -168,7 +169,7 @@ export default function AccountPage() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center"
+              className="w-full bg-[#002366] text-white py-2 rounded-md hover:bg-[#002366] transition-colors flex items-center justify-center"
               disabled={isSubmitting}
             >
               {isSubmitting ? (

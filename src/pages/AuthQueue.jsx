@@ -116,7 +116,7 @@ export default function AuthorizationQueuePage() {
             <input
               type="text"
               placeholder="Search user"
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="pl-10 pr-4 py-2 border bg-white border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={searchQuery}
               onChange={handleSearch}
             />
