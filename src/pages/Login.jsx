@@ -1,8 +1,8 @@
 import LoginForm  from "@/mycomponents/LoginForm";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import  DashboardPrev  from "@/mycomponents/DashboardPrev";
 import logo from "@/assets/lapo-logo.png";
+import DashboardPrev from "@/mycomponents/DashboardPrev";
 
 export default function LoginPage() {
   const [isMounted, setIsMounted] = useState(false);
@@ -60,7 +60,7 @@ export default function LoginPage() {
           transition={{ duration: 0.7 }}
         >
           <motion.div
-            className="absolute top-0 right-0 w-40 h-40 bg-blue-700 rounded-bl-full"
+            className="absolute top-0 right-0 w-40 h-40 bg-[#002366] rounded-bl-full"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5, type: "spring" }}

@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
+import Header from "@/mycomponents/Header"
+import { navItems } from "@/mycomponents/Sdebar"
 
 
 
@@ -96,7 +99,10 @@ export default function BlockUnblockCardPage() {
   }, [])
 
   return (
-    <div className="container mx-auto p-6 max-w-6xl">
+    <div className="h-full">
+      <Header icon={navItems[10].icon} label={navItems[10].label}/>
+      <ContentWrapper>
+ <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Block/Unblock Card</h1>
         <p className="text-gray-600">Attend to card block and unblock requests here.</p>
@@ -110,7 +116,7 @@ export default function BlockUnblockCardPage() {
           <input
             type="text"
             id="accountNumber"
-            className="w-full md:w-96 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full bg-white md:w-96 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002366]"
             placeholder="Enter account number"
             value={accountNumber}
             onChange={handleAccountNumberChange}
@@ -121,7 +127,7 @@ export default function BlockUnblockCardPage() {
 
         {isLoading ? (
           <div className="text-center py-12">
-            <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-4"></div>
+            <div className="animate-spin h-8 w-8 border-4 border-[#002366] border-t-transparent rounded-full mx-auto mb-4"></div>
             <p className="text-gray-600">Loading cards...</p>
           </div>
         ) : hasSearched ? (
@@ -203,6 +209,8 @@ export default function BlockUnblockCardPage() {
           )
         ) : null}
       </div>
+    </div>
+      </ContentWrapper>
     </div>
   )
 }

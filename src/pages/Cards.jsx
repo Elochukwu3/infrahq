@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Search, Calendar, SlidersHorizontal, CreditCard } from "lucide-react"
+import ContentWrapper from "@/mycomponents/layout/ContentWrapper"
+import Header from "@/mycomponents/Header"
+import { navItems } from "@/mycomponents/Sdebar"
 
 
 
@@ -69,6 +72,9 @@ export default function CardsPage() {
   })
 
   return (
+    <div className="h-full">
+      <Header icon={navItems[9].icon} label={"Cards"}/>
+      <ContentWrapper>
     <div className="container mx-auto p-6 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Cards</h1>
@@ -104,7 +110,7 @@ export default function CardsPage() {
             />
           </div>
 
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center hover:bg-blue-700 transition-colors">
+          <button className="bg-[#002366] text-white px-4 py-2 rounded-md flex items-center transition-colors">
             <CreditCard size={18} className="mr-2" />
             Issue Card
           </button>
@@ -116,7 +122,7 @@ export default function CardsPage() {
             <input
               type="text"
               placeholder="Search card"
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none bg-white focus:ring-2 focus:ring-blue-500"
               value={searchQuery}
               onChange={handleSearch}
             />
@@ -225,6 +231,8 @@ export default function CardsPage() {
           </>
         )}
       </div>
+    </div>
+      </ContentWrapper>
     </div>
   )
 }
