@@ -55,6 +55,7 @@ function App() {
         {path: 'trail', element: <TrailPage/>},
         {path: 'stock', element: <StockPage/>},
         {path: 'generate-reissue', element: <div>Generate/Reissue</div>},
+        
         {path: 'complaints-resolve', element: <ResolutionPage/>},
         {path: 'account', element: <AccountPage/>},
         {path: 'authorization-list', element: <AuthorizationListPage/>},
