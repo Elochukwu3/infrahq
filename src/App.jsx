@@ -51,6 +51,8 @@ function App() {
         {path: "block-unblock", element: <BlockUnblockCardPage/>},
         {path: "complaints-log", element: <ComplaintsLogPage/>},
         {path: 'trail', element: <TrailPage/>},
+        {path: 'stock', element: <div>Stock</div>},
+        {path: 'complaints-resolve', element: <div>complaints-resolve</div>},
         {path: 'account', element: <AccountPage/>},
         {path: 'authorization-list', element: <AuthorizationListPage/>},
         {path: 'authorization-queue', element: <AuthorizationQueuePage/>},
