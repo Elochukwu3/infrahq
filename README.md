@@ -1,12 +1,60 @@
-# React + Vite
+# InfraHQ 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+InfraHQ is a modern, responsive, and user-centric administrative dashboard built for internal operations management and account monitoring. It features an elegant UI, intuitive navigation, and powerful permission management tailored for institutions or internal teams.
 
-Currently, two official plugins are available:
+🔗 [Live Demo](https://infrahq.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📁 [Figma Design Reference](https://www.figma.com/design/kxTFknUuQ1J0xiMZKoFmiQ/LAPO-Web-App?node-id=524-10429&t=m2SgNUsprjLS0k80-1)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 🔐 Role-Based Access Control (RBAC)
+- 🧑‍💼 Account and User Management
+- ✅ Custom Role Creation & Permissions
+- 🧾 Authorization Queues & Lists
+- 💳 Card Requests & Management
+- 📈 Activity Logging
+- 🌍 Localization Support (planned)
+
+---
+
+## 🧱 Tech Stack
+
+- **Frontend**: React.js, TailwindCSS (in progress)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Components**: ShadCN/UI (custom components library)
+
+---
+
+## 📷 Screenshots
+
+| Dashboard | Role Creation | Permissions Table |
+|----------|----------------|-------------------|
+| ![Dashboard](https://i.imgur.com/YOUR_DASHBOARD_IMG.png) | ![Role Creation](https://i.imgur.com/YOUR_ROLE_IMG.png) | ![Permissions](https://i.imgur.com/YOUR_PERMISSIONS_IMG.png) |
+
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- Git
+- Package Manager: `pnpm` or `npm` or `yarn`
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Elochukwu3/infrahq-git.git
+cd infrahq-git
+
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
